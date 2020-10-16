@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Netflix Roulette</title>
     <!-- Tailwind -->
-    <link href="{{ mix('js/app.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
 </head>
-<body class="h-screen bg-dark " style="background-image: linear-gradient(to right, #c31432, #240b36); ">
+<body class="h-screen bg-dark" style="background-image: linear-gradient(to right, #c31432, #240b36); ">
 <div id="app">
     <app></app>
 </div>

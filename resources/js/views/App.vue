@@ -109,12 +109,12 @@
             };
 
 
-            axios.request(options).then(result => {
-                let genres =  result.data.ITEMS;
-                this.genres = genres;
-            }, error => {
-                console.error(error);
-            });
+            // axios.request(options).then(result => {
+            //     let genres =  result.data.ITEMS;
+            //     this.genres = genres;
+            // }, error => {
+            //     console.error(error);
+            // });
         },
         methods: {
             searchShow: function () {
@@ -148,23 +148,23 @@
                 };
 
 
-                axios.request(options).then(result => {
-                    let shows =  result.data.ITEMS;
-                    let count = result.data.COUNT; // get count of response
-                    if (count === '0') {
-                        this.message = true;
-                    } else {
-                        let random = Math.floor(Math.random() * shows.length);
-                        let showID = shows[random];
-                        this.showList = shows;
-                        this.show = showID;
-                    }
-
-                }, error => {
-                    console.error(error);
-                }).finally(() => {
-                    this.loading = false
-                });
+                // axios.request(options).then(result => {
+                //     let shows =  result.data.ITEMS;
+                //     let count = result.data.COUNT; // get count of response
+                //     if (count === '0') {
+                //         this.message = true;
+                //     } else {
+                //         let random = Math.floor(Math.random() * shows.length);
+                //         let showID = shows[random];
+                //         this.showList = shows;
+                //         this.show = showID;
+                //     }
+                //
+                // }, error => {
+                //     console.error(error);
+                // }).finally(() => {
+                //     this.loading = false
+                // });
             }
         }
     }

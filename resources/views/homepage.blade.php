@@ -9,6 +9,16 @@
     <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#c31432">
+    <meta name="msapplication-TileColor" content="#c31432">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body class="h-screen bg-dark" style="background-image: linear-gradient(to right, #c31432, #240b36); ">
 <div id="app">

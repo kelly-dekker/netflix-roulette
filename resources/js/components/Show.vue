@@ -3,22 +3,20 @@
 
         <div>
 
-            <div class="flex p-8">
-                <img :src="image" alt="">
+            <div class="flex flex-wrap justify-center items-start p-4 sm:p-8">
+                <img :src="image" alt="" class="w-1/3 md:w-auto">
 
-                <div class="ml-5 text-white">
-                    <h3 class="text-2xl mt-5 underline">{{ title }}</h3>
+                <div class="pl-4 text-white w-2/3">
+                    <h3 class="text-xl sm:text-2xl md:mt-5 underline">{{ title }}</h3>
 
-                    <div class="flex mb-3 mt-2 text-sm font-mono">
+                    <div class="flex mb-3 mt-2 text-xs sm:text-sm font-mono">
                         <span class="mr-2">{{ released }} |</span>
-                        <span class="mr-2">{{ type }} |</span>
-                        <span>{{ runtime }}</span>
+                        <span class="mr-2">{{ type }}</span>
                     </div>
 
-                    <p class="text-sm" v-html="synopsis"></p>
+
+                    <p class="text-sm sm:text-base" v-html="synopsis"></p>
                 </div>
-
-
             </div>
 
         </div>
